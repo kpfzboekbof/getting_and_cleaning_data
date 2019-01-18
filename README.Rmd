@@ -1,0 +1,48 @@
+==================================================================
+Human Activity Recognition Using Smartphones Dataset With Analysis Function
+Version 1.0
+==================================================================
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+Smartlab - Non Linear Complex Systems Laboratory
+DITEN - Universit? degli Studi di Genova.
+Via Opera Pia 11A, I-16145, Genoa, Italy.
+activityrecognition@smartlab.ws
+www.smartlab.ws
+==================================================================
+Analysis function created by Fan Cheng-Yi
+==================================================================
+
+Description of the functions
+
+#1. Merging data
+Merging datasets from "test" and "train" dataset, with each observation labeled by "subject label(subject_train.txt & subject_test.txt)" and "activity label(y_test.txt & y_train.txt)"
+
+Remove the temporary files after getting the dataframe we need.
+
+---
+
+#2. Rename column name with "features.txt"
+Rename the colume name of the dataframe with variables from "features.txt"
+
+---
+
+#3. Extract measurements on the mean and SD
+Filter variables containing "mean" and "std".
+Rename the subject and activity label
+
+---
+
+#4. label the activity
+Change the activity label from numbers to the descriptive string.
+
+---
+
+#5. Rename the colnames
+Rename the variables into a more descriptive names.
+
+---
+
+#6. Sum the average of each variable for each activity and each subject
+Sum up the dataframe grouped by the 2 labels(subject and activity) and get the mean of each variables.
+
+
