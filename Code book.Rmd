@@ -1,6 +1,12 @@
 Code Book 
 =================
 
+*Labels
+subject: the ID of the tested or trained subject(participant)
+activity: the six acitvities performed in the test or train, which are LAYING, SITTING, STANDING, WALKING and WALKING_DOWNSTAIRS, WALKING_UPSTAIRS.
+
+
+*Measurements
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. 
 
 /time./
@@ -21,24 +27,25 @@ The magnitude of these three-dimensional signals were calculated using the Eucli
 /.XYZ/
 These signals were used to estimate variables of the feature vector for each pattern:  
 '.XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-
-time.BodyAcc.XYZ           
-time.GravityAcc.XYZ
-time.BodyAccJerk.XYZ
-time.BodyGyro.XYZ
-time.BodyGyroJerk.XYZ
-time.BodyAccMag
-time.GravityAccMag
-time.BodyAccJerkMag
-time.BodyGyroMag
-time.BodyGyroJerkMag
-freq.BodyAcc.XYZ
-freq.BodyAccJerk.XYZ
-freq.BodyGyro.XYZ
-freq.BodyAccMag
-freq.BodyAccJerkMag
-freq.BodyGyroMag
-freq.BodyGyroJerkMag
+                    
+                          unit
+time.BodyAcc.XYZ          second
+time.GravityAcc.XYZ       second
+time.BodyAccJerk.XYZ      second
+time.BodyGyro.XYZ         second
+time.BodyGyroJerk.XYZ     second
+time.BodyAccMag           second
+time.GravityAccMag        second
+time.BodyAccJerkMag       second
+time.BodyGyroMag          second
+time.BodyGyroJerkMag      second
+freq.BodyAcc.XYZ          Hz
+freq.BodyAccJerk.XYZ      Hz
+freq.BodyGyro.XYZ         Hz 
+freq.BodyAccMag           Hz
+freq.BodyAccJerkMag       Hz
+freq.BodyGyroMag          Hz
+freq.BodyGyroJerkMag      Hz
 
 The set of variables that were estimated from these signals are: 
 
